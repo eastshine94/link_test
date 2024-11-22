@@ -1,13 +1,36 @@
 import "./App.css";
 
 function App() {
+  const mbtiList = [
+    "ISTJ",
+    "ISFJ",
+    "INFJ",
+    "INTJ",
+    "ISTP",
+    "ISFP",
+    "INFP",
+    "INTP",
+    "ESTP",
+    "ESFP",
+    "ENFP",
+    "ENTP",
+    "ESTJ",
+    "ESFJ",
+    "ENFJ",
+    "ENTJ",
+  ];
   return (
     <div className="container">
-      <div className="btn">
-        <a href="https://3374034b56fe.ngrok.app/bridge/mbti" target="_self">
-          MBTI 완료!!
-        </a>
-      </div>
+      {mbtiList.map((val) => (
+        <div className="btn" key={val}>
+          <a
+            href={`https://3374034b56fe.ngrok.app/bridge/mbti?mbti=${val}`}
+            target="_self"
+          >
+            {val}
+          </a>
+        </div>
+      ))}
     </div>
   );
 }

@@ -1,12 +1,16 @@
 .container {
+  padding: 50px 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 100px);
+  gap: 40px;
 }
 .container .btn {
   display: flex;
   justify-content: center;
 }
 .container .btn a {
-  margin-top: 50px;
-  padding: 8px;
+  padding: 16px;
   border: 1px solid #101010;
   background-color: #101010;
   color: #fff;
