@@ -1,9 +1,10 @@
 .container {
-  padding: 50px 0;
-  display: grid;
+  padding: 150px 0 0;
+  display: flex;
   justify-content: center;
-  grid-template-columns: repeat(2, 0.2fr);
-  gap: 40px;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
 }
 .container .btn {
   display: flex;
@@ -17,4 +18,18 @@
   font-weight: 700;
   text-decoration: none;
   outline: none;
+}
+.selectContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flex {
+  display: flex;
+  gap: 8px;
+}
+
+select {
+  width: 100px;
 }
